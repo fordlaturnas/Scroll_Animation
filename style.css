@@ -7,11 +7,22 @@
 body {
   font-family: 'Roboto', 'sans-serif';
   display: flex;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100;
+  width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  overflow-x: hidden;
+  background-color: burlywood;
 }
 
 h1 {
@@ -43,4 +54,18 @@ h1 {
 
 .box h2 {
   font-size: 45px;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 280px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .box {
+    width: 612px;
+    height: 300px;
+  }
 }
